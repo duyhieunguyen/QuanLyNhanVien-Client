@@ -14,7 +14,7 @@ function dang_nhap() {
     if (kq != 'loginfalse') {
         localStorage.setItem("user", JSON.stringify(kq))
         alert("Đăng nhập thành công!!!")
-        document.location.href = "/views/index.html"
+        document.location.href = "/views/home.html"
     } else {
         alert("Đăng nhập thất bại!!!")
     }
@@ -32,8 +32,9 @@ var firebaseConfig = {
 
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
 function loginGoogle() {
+    firebase.initializeApp(firebaseConfig);
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().languageCode = 'vi';
     // To apply the default browser preference instead of explicitly setting it.

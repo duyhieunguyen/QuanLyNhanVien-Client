@@ -1,5 +1,5 @@
-var Dia_chi_Dich_vu = "http://localhost:3000" 
-//var Dia_chi_Dich_vu = "https://quanlynhanvien-server.herokuapp.com/"
+//var Dia_chi_Dich_vu = "http://localhost:3000" 
+var Dia_chi_Dich_vu = "https://quanlynhanvien-server.herokuapp.com/"
 
 function Doc_Danh_Sach_Nhan_Vien() {
     var Du_lieu = {}
