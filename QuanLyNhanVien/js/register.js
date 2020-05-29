@@ -26,6 +26,7 @@ function DongYThem() {
 
         emp.FullName = FullName.value;
         emp.Email = Email.value;
+        emp.Role = "admin"
         emp.Schedules = [];
         emp.Schedules.push(sch);
         kq = Them_Tai_Khoan_Nhan_Vien(emp);
@@ -41,14 +42,10 @@ function DongYThem() {
 function DongYXacThuc() {
     if (kq.trim() == ma_xac_thuc.value) {
         alert("Xác thực thành công!!!")
-        document.location.href = "/views/index.html";
+        document.location.href = "/views/login.html";
     } else {
         alert("Mã xác thực không đúng!!!")
     }
-}
-
-function chuyen_trang_index() {
-    document.location.href = "/views/index.html";
 }
 
 var md5 = function (string) {
